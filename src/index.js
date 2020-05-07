@@ -12,22 +12,22 @@ async function getPasonalData() {
   for (let i = 0; i < 20; i++) {
     const tr = document.createElement("tr");
 
-    const tdPicture = document.createElement("td");
-    const picture = document.createElement("img");
-    const src = users.results[i].picture.thumbnail;
+    // const tdPicture = document.createElement("td");
+    // const img = document.getElementById("img");
 
     const tdName = document.createElement("td");
     const tdAddress = document.createElement("td");
     const tdEmail = document.createElement("td");
     const tdPhone = document.createElement("td");
 
+    // img.src = users.results[i].picture.thumbnail;
     tdName.innerText = users.results[i].name.first + users.results[i].name.last;
     tdAddress.innerText = users.results[i].location.city;
     tdEmail.innerText = users.results[i].email;
     tdPhone.innerText = users.results[i].phone;
 
-    tdPicture.appendChild(picture);
-    tr.appendChild(tdPicture);
+    // tdPicture.appendChild(img);
+    // tr.appendChild(tdPicture);
     tr.appendChild(tdName);
     tr.appendChild(tdAddress);
     tr.appendChild(tdEmail);
